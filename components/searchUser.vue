@@ -6,7 +6,7 @@
         <label for="searchPseudo"></label>
         <input type="text" for="searchPseudo" v-model="searchPseudo" class="form-control" placeholder="Taper son pseudo ici" aria-label="Taper son pseudo ici">
         <div class="input-group-append">
-          <button class="btn btn-primary" @click="shareRequest">Rechercher et partager</button>
+          <button class="btn btn-primary" @click="shareRequest">{{searchText}}</button>
         </div>
       </div>
       <!-- La réponse de la recherche si succes ou non -->
@@ -61,7 +61,8 @@ export default {
     return{
       searchPseudo: '',
       searchResults: '',
-      responseSharingResult: '' 
+      responseSharingResult: '',
+      searchText: 'Rechercher et partager', 
     }
   },
   props: {
@@ -69,7 +70,9 @@ export default {
     userOndemand: Array
   },
   mounted() {
-    
+    if(window.screen.width < 768) {
+      this.searchText = 'Recherche'
+    }
   },
   methods: {
     upperFirstLetter,
