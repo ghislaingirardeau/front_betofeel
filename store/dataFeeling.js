@@ -15,6 +15,7 @@ export function postFeeling (feeling, kindOfFeel) {
           method: "POST",
               headers: {
               "content-type": "application/json",
+              'Access-Control-Allow-Origin' : 'https://betofeel.netlify.app/',
               "Authorization" : 'Bearer ' + token
               },
           body: JSON.stringify(postEmotion)
