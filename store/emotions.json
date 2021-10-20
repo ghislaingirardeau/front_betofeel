@@ -1,5 +1,5 @@
 {
-    "positive": ["love", "joy", "suprise", "grateful", "happy",
+    "positive": ["love", "joy", "surprise", "grateful", "happy",
         "sentimental", "affectionate", "romantic", "enchanted", "euphoric", "excited", "optimistic", "proud", "cheerful", "content", "peaceful",
         "moved", "amazed", "stunned", "thankful", "appreciative", "nostalgic", "tender", "compassionate", "warmhearted", "enamored", "passionate", "rapturous",
     "enthralled", "jubilant", "elated", "zealous", "enthusiastic", "hopeful", "eager", "illustrious", "triumphant", "playful", "amused", "delighted", "jovial", "pleased", "satisfied", "serene", "tranquil", 
@@ -9,7 +9,7 @@
         "confused", "overcome", "depressed", "hopeless", "neglected", "isolated", "guilty", "regretful", "displeased", "dismayed", "disheartened", "miserable", "disturbed", "agonized", "revolted", "contemptuous",
          "envious", "resentful", "aggravated", "annoyed", "frustrated", "agitated", "hostile", "hateful", "dreadful", "mortified", "anxious", "worried", "inadequate", "inferior", "hysterical", "panicked", "helpless", 
         "frightened" ],
-    "positiveSimple": ["love", "joy", "suprise", "grateful", "happy",
+    "positiveSimple": ["love", "joy", "surprise", "grateful", "happy",
         "sentimental", "affectionate", "romantic", "enchanted", "euphoric", "excited", "optimistic", "proud", "cheerful", "content", "peaceful",
         "moved", "amazed", "stunned"],
     "negativeSimple": ["fear", "anger", "sadness", "scared", "terrifier", "insecure", "nervous", "horrfied", "enraged", "exasperated", "irritable",
@@ -28,7 +28,7 @@
                 "colorThird": "#8febe5" 
             },
             {
-                "feel":"suprise",
+                "feel":"surprise",
                 "colorPrimary": "#0408d1",
                 "colorSecondary": "#4548de",
                 "colorThird": "#8f91eb" 
