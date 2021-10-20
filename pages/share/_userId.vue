@@ -2,9 +2,15 @@
 
   <div class="container align-items-center share_tree">
 
-    <headerBar :pseudo="pseudo">
-      <NuxtLink to="/home" >home</NuxtLink>
-      <NuxtLink to="/" @click.native="disconnect">Déconnexion</NuxtLink>
+    <headerBar  :pseudo="pseudo">
+      <nav class="col-12 row justify-content-around">
+        <div class="col-4">
+          <NuxtLink to="/home" >home</NuxtLink>
+        </div>
+        <div class="col-4">
+          <NuxtLink to="/" @click.native="disconnect">Déconnexion</NuxtLink>
+        </div>
+      </nav>
     </headerBar>
 
     <transition name="fadeShare" appear>

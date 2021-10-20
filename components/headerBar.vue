@@ -1,5 +1,5 @@
 <template>
-    <header class="row d-flex justify-content-around align-items-center my-3 pb-2 text-center header__display">
+    <header class="row justify-content-around align-items-center my-3 pb-2 text-center header__display">
         <h3 class="col-12 col-lg-2 my-2">Be to feel</h3>
         <div class="col-lg-2 header--svg">
           <svg viewBox="0 0 1280 464" fill="none">
