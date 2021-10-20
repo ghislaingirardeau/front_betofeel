@@ -64,9 +64,9 @@ export default {
     imagePicked(event) {
       let target = document.getElementById(`${event.target.id}`)
       let cards = document.getElementsByClassName('card__signup')
-      cards.forEach(element => {
-        element.classList.remove('card__signup--selected')
-      })
+      for (var i = 0; i < cards.length; i++) {
+        cards[i].classList.remove('card__signup--selected')
+      }
       target.classList.add('card__signup--selected')
       this.post.avatar = event.target.id
     }
