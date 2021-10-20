@@ -1,0 +1,39 @@
+.button__feel{
+    color: rgb(85, 85, 85);
+    border: 2px solid rgb(85, 85, 85);
+    font-weight: bold;
+    transition: all .5s ease;
+
+    &--colorlight{
+        background: linear-gradient(321deg, rgba(23,236,58,1) 0%, rgba(0,255,205,1) 49%, rgba(7,124,246,1) 100%);    }
+    &--colordark {
+        background: linear-gradient(321deg, rgba(236,58,23,1) 0%, rgba(255,115,0,1) 49%, rgba(233,246,7,1) 100%);
+    }
+    &:hover{
+        color: white;
+        box-shadow: 2px 2px 5px rgb(163, 163, 163);
+    }
+}
+
+.button--show{
+    border: 2px solid rgb(1, 138, 138);
+    border-radius: 5px 5px;
+    background-color: rgb(1, 138, 138);
+    color: white;
+    transition: all .4s ease;
+    &:hover{
+        color: rgb(30, 35, 36);
+    }
+}
+
+.button--connect, .btn--unfollow{
+    border: 2px solid rgb(1, 138, 138);
+    border-radius: 5px 5px;
+    background-color: rgb(248, 248, 246);
+    color: rgb(1, 138, 138);
+    transition: all .4s ease;
+    &:hover{
+        color: rgb(30, 35, 36);
+        box-shadow: 3px 3px 5px rgba(219, 219, 219, 0.822);
+    }
+}

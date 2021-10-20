@@ -1,0 +1,30 @@
+h1, h2, h3 {
+    font-family: $familymain;
+    color: $textColor;
+}
+
+p, label {
+  font-family: $familymain;
+  font-size: $fontparagraphe;
+  color: $textColor;
+}
+
+button, h5, a{
+    font-family: $familylink;
+}
+
+body{
+  background: linear-gradient(135deg,rgb(112, 112, 112) 0%, rgb(31, 31, 31) 100%) no-repeat;
+}
+
+.header--svg{
+  height: 80px;
+  & > svg {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.svg--rotate{
+  transform: rotateY(180deg);
+}

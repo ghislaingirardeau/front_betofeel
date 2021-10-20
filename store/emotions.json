@@ -1,0 +1,55 @@
+{
+    "positive": ["love", "joy", "suprise", "grateful", "happy",
+        "sentimental", "affectionate", "romantic", "enchanted", "euphoric", "excited", "optimistic", "proud", "cheerful", "content", "peaceful",
+        "moved", "amazed", "stunned", "thankful", "appreciative", "nostalgic", "tender", "compassionate", "warmhearted", "enamored", "passionate", "rapturous",
+    "enthralled", "jubilant", "elated", "zealous", "enthusiastic", "hopeful", "eager", "illustrious", "triumphant", "playful", "amused", "delighted", "jovial", "pleased", "satisfied", "serene", "tranquil", 
+    "touched", "stimulated", "astounded", "speechless", "awe-struck", "astonished", "perplexed", "disillusioned", "bewildered", "shocked"],
+    "negative": ["fear", "anger", "sadness", "scared", "terrifier", "insecure", "nervous", "horrfied", "enraged", "exasperated", "irritable",
+        "jealous", "disgusted", "hurt", "unhappy", "disappointed", "shameful", "lonely", "gloomy",
+        "confused", "overcome", "depressed", "hopeless", "neglected", "isolated", "guilty", "regretful", "displeased", "dismayed", "disheartened", "miserable", "disturbed", "agonized", "revolted", "contemptuous",
+         "envious", "resentful", "aggravated", "annoyed", "frustrated", "agitated", "hostile", "hateful", "dreadful", "mortified", "anxious", "worried", "inadequate", "inferior", "hysterical", "panicked", "helpless", 
+        "frightened" ],
+    "positiveSimple": ["love", "joy", "suprise", "grateful", "happy",
+        "sentimental", "affectionate", "romantic", "enchanted", "euphoric", "excited", "optimistic", "proud", "cheerful", "content", "peaceful",
+        "moved", "amazed", "stunned"],
+    "negativeSimple": ["fear", "anger", "sadness", "scared", "terrifier", "insecure", "nervous", "horrfied", "enraged", "exasperated", "irritable",
+        "jealous", "disgusted", "hurt", "unhappy", "disappointed", "shameful", "lonely", "gloomy"],
+    "main": [
+            {
+                "feel":"joy",
+                "colorPrimary": "#37d104",
+                "colorSecondary": "#6bde45",
+                "colorThird": "#a6eb8f" 
+            },
+            {
+                "feel":"love",
+                "colorPrimary": "#04d1c3",
+                "colorSecondary": "#45ded4",
+                "colorThird": "#8febe5" 
+            },
+            {
+                "feel":"suprise",
+                "colorPrimary": "#0408d1",
+                "colorSecondary": "#4548de",
+                "colorThird": "#8f91eb" 
+            },
+            {
+                "feel":"fear",
+                "colorPrimary": "#d11c04",
+                "colorSecondary": "#de5745",
+                "colorThird": "#eb9a8f" 
+            },
+            {
+                "feel":"anger",
+                "colorPrimary": "#d17c04",
+                "colorSecondary": "#de9e45",
+                "colorThird": "#ebc58f" 
+            },
+            {
+                "feel":"sadness",
+                "colorPrimary": "#d1bd04",
+                "colorSecondary": "#d1c341",
+                "colorThird": "#ebe08f" 
+            }
+            ]
+}

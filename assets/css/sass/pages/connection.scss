@@ -1,0 +1,35 @@
+.message--error{
+    color: red;
+    font-style: italic;
+}
+
+.connection__bloc{
+    border: 3px solid rgb(1, 138, 138);
+    border-radius: 5px 5px;
+    box-shadow: 3px 3px 5px gray;
+}
+
+.card__signup{
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform .2s ease-in;
+  height: 190px;
+  &:hover{
+    border: 2px rgb(1, 138, 138) solid;
+    transform: scale(1.05);
+  }
+
+}
+.card__signup--selected{
+  border: 2px rgb(1, 138, 138) solid;
+    transform: scale(1.05);
+}
+
+/* ANIMATION log */
+
+.fade_log-enter-active, .fade_log-leave-active {
+    transition: opacity .5s;
+  }
+  .fade_log-enter, .fade_log-leave-to {
+    opacity: 0;
+  }

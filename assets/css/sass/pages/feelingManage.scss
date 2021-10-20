@@ -1,0 +1,71 @@
+.aside__bloc{
+    &--title {
+        font-size: $titleSizeh2;
+    }
+}
+
+.aside__selection, .aside__legend{
+    border: 3px solid rgb(1, 138, 138);
+    border-radius: 5px 5px;
+    box-shadow: 3px 3px 5px gray;  
+}
+
+.label__display {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: $fontfeelselection;
+    user-select: none;
+    font-family: $familyfeel;
+    font-weight: bold;
+    color: $fontdark;
+}
+
+.label__display input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0px;
+    width: 0px;
+}
+
+.checkmark {
+    position: absolute;
+    top: 30%;
+    left: 0px;
+    height: 10px;
+    width: 10px;
+    color: blue;
+    font-size: 20px;
+    display: none;
+}
+
+.label__display:hover {
+    text-decoration: underline blue;
+}
+
+.label__display input:checked ~ .checkmark {
+    display: initial;
+}
+
+.feeling__selected{
+    font-size: $fontfeelselected;
+    font-weight: bold;
+    font-family: $familyfeel;
+}
+
+.legend{
+    height: 80px;
+    & > p {
+        font-size: $fontlegend;
+        font-family: $familyfeel;
+        font-weight: bold;
+    }
+}
+
+.switch__font--color{
+    color: blue;
+    
+}
