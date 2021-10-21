@@ -14,7 +14,6 @@ export function postFeeling (feeling, kindOfFeel) {
       fetch(`https://apigooddeeds.herokuapp.com/api/feeling/${kindOfFeel}`, {
           method: "POST",
               headers: {
-              "Access-Control-Allow-Origin": "https://betofeel.netlify.app",
               "content-type": "application/json",
               "Authorization" : 'Bearer ' + token
               },
