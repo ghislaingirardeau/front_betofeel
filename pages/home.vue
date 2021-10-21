@@ -55,7 +55,6 @@ export default {
       headers: {
       "content-type": "application/json",
       "Authorization" : 'Bearer ' + token,
-      'Access-Control-Allow-Origin' : 'https://betofeel.netlify.app/',
     },
       body: JSON.stringify(userFeel)
     })

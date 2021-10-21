@@ -18,7 +18,6 @@ export function shareRequest() {
               method: "POST",
               headers: {
               "content-type": "application/json",
-              'Access-Control-Allow-Origin' : 'https://betofeel.netlify.app/',
               "Authorization" : 'Bearer ' + token
               },
               body: JSON.stringify(dataShare)
@@ -53,7 +52,6 @@ export function responseDemand(res, idFrom, pseudo) {
         method: "PUT",
         headers: {
         "content-type": "application/json",
-        'Access-Control-Allow-Origin' : 'https://betofeel.netlify.app/',
         "Authorization" : 'Bearer ' + token
         },
         body: JSON.stringify(dataShare)
@@ -96,7 +94,6 @@ export function removeSharing(user) {
   axios.put("https://apigooddeeds.herokuapp.com/api/share/remove", data, {
     headers: {
       "content-type": "application/json",
-      'Access-Control-Allow-Origin' : 'https://betofeel.netlify.app/',
       "Authorization" : 'Bearer ' + token
     },
   }) 

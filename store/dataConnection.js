@@ -13,7 +13,6 @@ export function postConnection (connectionType, post) {
     const data = JSON.stringify(post)
       axios.post("https://apigooddeeds.herokuapp.com/api/" + connectionType, data, {
         headers: {
-          'Access-Control-Allow-Origin' : 'https://betofeel.netlify.app/',
           "content-type": "application/json",
         },
       }) 
