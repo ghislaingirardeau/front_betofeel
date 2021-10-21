@@ -53,7 +53,6 @@ export default {
     fetch("https://apigooddeeds.herokuapp.com/api/feeling/", {
       method: "POST",
       headers: {
-      "Access-Control-Allow-Origin": "https://betofeel.netlify.app",
       "content-type": "application/json",
       "Authorization" : 'Bearer ' + token,
     },
