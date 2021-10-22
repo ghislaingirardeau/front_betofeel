@@ -3,11 +3,11 @@
   <headerBar :pseudo="pseudo">
     <NuxtLink to="/" @click.native="disconnect">Déconnexion</NuxtLink>
   </headerBar>
-  <nav class="row justify-content-center">
+  <nav class="row justify-content-center mx-xl-2">
     <searchUser :userShared="userShared" :userOndemand="userOndemand" @update-sharing="updateUserShareArray"/>
   </nav>
 
-  <main class="row justify-content-around mx-2">
+  <main class="row justify-content-around mx-2 my-3">
 
     <transition name="fade" appear>
       <article v-if="dataLoad" class="col-12 col-xl-7">

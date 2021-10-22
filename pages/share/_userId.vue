@@ -3,20 +3,20 @@
   <div class="container align-items-center share_tree">
 
     <headerBar  :pseudo="pseudo">
-      <nav class="col-12 row justify-content-around">
-        <div class="col-4">
-          <NuxtLink to="/home" >home</NuxtLink>
+        <div class="col-6">
+          <b-button to="/home" variant="outline-primary">Accueil</b-button>
         </div>
-        <div class="col-4">
-          <NuxtLink to="/" @click.native="disconnect">Déconnexion</NuxtLink>
+        <div class="col-6">
+          <b-button to="/" @click.native="disconnect" variant="outline-primary">Déconnexion</b-button>
         </div>
-      </nav>
     </headerBar>
 
     <transition name="fadeShare" appear>
-      <section>
-        <article class="col-12">
-            <h2 class="col-12 mb-5 mt-1 text-center">Voici l'avatar de {{pseudoShare}}</h2>
+      <section class="row justify-content-center mb-3">
+        <article class="col-11">
+          <transition name="fade">
+            <h2 v-if="dataLoad" class="col-12 mb-0 mb-lg-3 mt-2 text-center">Voici l'avatar de {{pseudoShare}}</h2>
+          </transition>
             <emoImage :avatar="avatarShare" :emotion="emotion" :key="reload"/>
         </article> 
       </section>     
@@ -35,9 +35,10 @@ export default {
             idUserShared: this.$route.params.id,
             reload: false,
             emotion: [],
-            pseudoShare: String,
+            pseudoShare: '',
             pseudo: '',
-            avatarShare: 'null'
+            avatarShare: 'null',
+            dataLoad: false
         }
     },
     methods: {

@@ -17,7 +17,7 @@
 
     <b-row align-h="center" class="mt-4">
       <b-col cols="11" class="mb-3">
-        <h3>Choisie une représentation :</h3>
+        <h3>Choisis un avatar :</h3>
       </b-col>
       <b-col cols="5" md="4" class="my-2">
         <b-img class="card__signup" id="bird" @click="imagePicked" thumbnail fluid src="@/assets/public/images/1751300.svg" alt="Image oiseau"></b-img>
