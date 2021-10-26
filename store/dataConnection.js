@@ -10,6 +10,7 @@ export function postConnection (connectionType, post) {
   .then(user => {
     this.$auth.setUser(user)
     }) */
+    this.loaderShow = true
     const data = JSON.stringify(post)
       axios.post("https://apigooddeeds.herokuapp.com/api/" + connectionType, data, {
         headers: {
@@ -26,5 +27,8 @@ export function postConnection (connectionType, post) {
         this.$router.push('home')
 
       })
-      .catch((error) => this.errorMessage = error.response.data.message)
+      .catch((error) => {
+        this.errorMessage = error.response.data.message
+        this.loaderShow = false
+      })
 }
