@@ -12,7 +12,7 @@
     <transition name="fade" appear>
       <article v-if="dataLoad" class="col-12 col-xl-7">
 
-        <h2 class="mb-5 mt-1 text-center">Mon avatar d'emotions</h2>
+        <h2 class="mb-sm-5 mt-1 text-center">Mon avatar d'emotions</h2>
         <emoImage :avatar="avatar" :emotion="emotion" :key="reload"/>
 
       </article>

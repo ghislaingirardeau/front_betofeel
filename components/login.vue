@@ -1,6 +1,11 @@
 <template>
 
   <div class="col-12">
+    <b-overlay 
+      :show="loaderShow" 
+      variant="transparent"
+      spinner-variant="warning"
+    >
 
     <h2 class="m-3">Espace de connexion</h2>
     <!-- TEST NUXT AUTH <h2 v-if="$auth.loggedIn">{{$auth.user.data.pseudo}} {{$auth.user.data.avatar}}</h2> -->
@@ -18,9 +23,9 @@
       <p class="message--error">{{errorMessage}}</p>
     </div>
 
-
     <p>Si vous n'avez pas de compte cliquer sur "s'inscrire"</p>
 
+    </b-overlay>
   </div>
 
 </template>
@@ -36,11 +41,12 @@ export default {
         pseudo: null,
         password: null
       },
-      errorMessage: null
+      errorMessage: null,
+      loaderShow: false
     }
   },
   methods: {
-    postConnection
+    postConnection,
   },
   mounted() {
   }
